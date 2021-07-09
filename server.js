@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 const { stringify } = require("querystring");
 
 // mongoose.connect("mongodb://localhost:27017/artgallery", {useNewUrlParser:true, useUnifiedTopology: true, useFindAndModify:false});
-mongoose.connect("mongodb+srv://admin_jyotsna:jojo123@cluster0.bqhnk.mongodb.net/artgallery", {useNewUrlParser:true, useUnifiedTopology: true, useFindAndModify:false});
+mongoose.connect("mongodb+srv://admin_jyotsna:"+process.env.MONGOPASSWORD+"@cluster0.bqhnk.mongodb.net/artgallery", {useNewUrlParser:true, useUnifiedTopology: true, useFindAndModify:false});
 
 commentSchema=({
     firstName:String,
