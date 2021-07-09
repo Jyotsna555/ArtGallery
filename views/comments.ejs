@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+
+<div class="aboutBox">
+    <!-- run a loop for creating a div for each comment -->
+    <h1><%=commsHeading%></h1>
+    <div class="commentboxbig">
+        <% comments.forEach(function(c) { %>
+            <div class="commentboxsmall">
+                <p><span class="fancyquotes"><%=c.firstName%> <%=c.lastName%></span> says...</p>
+                <p> <span class="fancyquotes">"</span><%=c.cbody%> <span class="fancyquotes">"</span></p>
+                <br>
+            </div>
+        <% })  %>
+    </div>
+    <br>
+
+    <form action="/comments" method="post">
+        <button class="myButton leavecomm" type="submit">Write a comment</button>
+    </form>
+    <br>
+    <form action="/exit" method="post">
+        <button class="myButton" type="submit">Exit</button>
+    </form>
+
+</div>
+<%- include("partials/footer") %>

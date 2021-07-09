@@ -1,0 +1,23 @@
+<%- include("partials/header") %>
+
+<div class="aboutBox">
+    <!-- input box for comment -->
+    <div class="comminput">
+        <form action="/comminput" method="post">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="off">
+            <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="off">
+            <br><br>
+            <div>
+                <label for="cbody">Body:</label>
+                <textarea id="cbody" name="cbody" class="form-control" cols="100" rows="7" placeholder="Enter post..." autocomplete="off"></textarea>
+            </div>
+               <br>
+            <button type="submit" class="myButton">Post!</button>
+        </form>
+    </div>
+    
+</div>
+<%- include("partials/footer") %>

@@ -1,0 +1,25 @@
+<%- include("partials/header2") %>
+
+<p class="pageContent">Before you enter the art gallery, please fill out this guest registration from!</p>
+
+<div class="aboutBox registerBox">
+    <form action="/" method="post">
+        <br>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="off">
+        <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="off">
+        <br>
+        <label for="email">E-mail ID:</label>
+        <input type="email" id="email" name="email" placeholder="Email ID" autocomplete="off">
+        <small id="emailHelp" class="form-text text-muted">Please enter a valid email, otherwise you will not be regsitered.</small>
+        <br>
+        <button class="myButton" type="submit">Register!</button>
+        <br><br><p>Don't worry, your data is safe with us! It just goes to our <a class="registerAnchor" href="https://mailchimp.com/">Mailchimp</a> subscribers' list!</p>
+    </form>
+    
+</div>
+
+
+<%- include("partials/footer") %>
